@@ -12,9 +12,9 @@ const Main = () => {
                     <h3 className="text-white py-5 m-0">Content goes here</h3>
                 </div>
             </div>
-            <div className="bg-custom">
+            <div className="bg-custom m-0">
                 <div className="container">
-                    <ul className="d-flex justify-content-between w-100">
+                    <ul className="d-flex justify-content-between w-100 m-0">
                         <li>
                             <a href="#">
                                 <img src={digitalComicsImg} alt="Digital comics" />

@@ -9,6 +9,10 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /*Header*/
 header img {
     width: 80px;
@@ -48,9 +52,10 @@ main > .bg-custom ul {
 .bg-custom ul li {
     display: flex;
     align-items: center;
-    padding: 30px 20px;
+    padding: 30px;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 14px;
 }
 
 .bg-custom ul li img {
@@ -59,4 +64,24 @@ main > .bg-custom ul {
 }
 .bg-custom ul li:hover {
     background-color: #0560b6;
+}
+
+/*Footer*/
+footer {
+    background-color: red;
+}
+
+.footer-top {
+    background-image: url("./assets/img/footer-bg.jpg");
+    color: rgb(161, 159, 159);
+    font-size: 14px;
+}
+
+.footer-top h5 {
+    color: white;
+    font-weight: 700;
+}
+
+.footer-top ul {
+    padding-bottom: 20px;
 }
