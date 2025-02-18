@@ -3,9 +3,9 @@ import logoImg from "../assets/img/dc-logo.png";
 const Header = () => {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-lg p-0">
                 <div className="container">
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand p-3" href="#">
                         <img src={logoImg} alt="Logo DC" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@ const Header = () => {
                             <li className="nav-item">
                                 <a href="#" className="nav-link">CHARACTERS</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item active">
                                 <a href="#" className="nav-link">COMICS</a>
                             </li>
                             <li className="nav-item">
