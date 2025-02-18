@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans", serif;
+}
+
+/*Header*/
+header img {
+    width: 80px;
+}
+
+#navbarNav {
+    height: 90px !important;
+}
+
+.nav-item {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    border-block: 3px solid transparent;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #0282F9;
+}
