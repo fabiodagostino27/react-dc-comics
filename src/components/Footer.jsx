@@ -2,8 +2,8 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-top">
-                <div className="container d-flex justify-content-between py-4">
-                    <div className="d-flex gap-3">
+                <div className="container d-flex justify-content-between">
+                    <div className="d-flex py-4 gap-3">
                         <div>
                             <h5>DC COMICS</h5>
                             <ul className="list-group">
@@ -49,6 +49,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
+                    <figure className="w-50"></figure>
                 </div>
             </div>
         </footer>

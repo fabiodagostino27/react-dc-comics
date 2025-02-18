@@ -85,3 +85,12 @@ footer {
 .footer-top ul {
     padding-bottom: 20px;
 }
+
+.footer-top figure {
+    background-image: url("./assets/img/dc-logo-bg.png");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
