@@ -7,7 +7,7 @@ const Header = (props) => {
         <header>
             <nav className="navbar navbar-expand-lg p-0">
                 <div className="container">
-                    <a className="navbar-brand p-3" href="#">
+                    <a className="navbar-brand py-3" href="#">
                         <img src={logoImg} alt="Logo DC" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
