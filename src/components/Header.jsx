@@ -1,6 +1,19 @@
 import logoImg from "../assets/img/dc-logo.png";
 
 const Header = () => {
+    const navLinks = [
+        { id: 1, title: "CHARACTERS", url: "#", current: false },
+        { id: 2, title: "COMICS", url: "#", current: true },
+        { id: 3, title: "MOVIES", url: "#", current: false },
+        { id: 4, title: "TV", url: "#", current: false },
+        { id: 5, title: "GAMES", url: "#", current: false },
+        { id: 6, title: "COLLECTIBLES", url: "#", current: false },
+        { id: 7, title: "VIDEOS", url: "#", current: false },
+        { id: 8, title: "FANS", url: "#", current: false },
+        { id: 9, title: "NEWS", url: "#", current: false },
+        { id: 10, title: "SHOP", url: "#", current: false }
+    ]
+
     return (
         <header>
             <nav className="navbar navbar-expand-lg p-0">
@@ -13,36 +26,14 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav h-100">
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">CHARACTERS</a>
-                            </li>
-                            <li className="nav-item active">
-                                <a href="#" className="nav-link">COMICS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">MOVIES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">TV</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">GAMES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">COLLECTIBLES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">VIDEOS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">FANS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">NEWS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">SHOP</a>
-                            </li>
+                            {navLinks.map(element => {
+                                const {id, title, url, current} = element;
+                                return (
+                                    <li key={id} className={`nav-item ${current ? "active" : ""}`}>
+                                        <a className="nav-link" href={url}>{title}</a>
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
                 </div>
