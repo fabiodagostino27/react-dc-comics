@@ -4,7 +4,12 @@ import footYt from "../assets/img/footer-youtube.png";
 import footPin from "../assets/img/footer-pinterest.png";
 import footPer from "../assets/img/footer-periscope.png";
 
-const Footer = () => {
+const Footer = (props) => {
+    const dcComicsLinks = props.dcComicsLinks;
+    const shopLinks = props.shopLinks;
+    const dcLinks = props.dcLinks;
+    const sitesLinks = props.sitesLinks;
+
     return (
         <footer>
             <div className="footer-top">
@@ -13,45 +18,44 @@ const Footer = () => {
                         <div>
                             <h5>DC COMICS</h5>
                             <ul className="list-group">
-                                <li><a href="#">Characters</a></li>
-                                <li><a href="#">Comics</a></li>
-                                <li><a href="#">Movies</a></li>
-                                <li><a href="#">TV</a></li>
-                                <li><a href="#">Games</a></li>
-                                <li><a href="#">Videos</a></li>
-                                <li><a href="#">News</a></li>
+                                {dcComicsLinks.map(element => {
+                                    const {id, title, url} = element;
+                                    return (
+                                        <li key={id}><a href={url}>{title}</a></li>
+                                    )
+                                })}
                             </ul>
 
                             <h5>SHOP</h5>
                             <ul className="list-group">
-                                <li><a href="#">Shop DC</a></li>
-                                <li><a href="#">Shop DC Collectibles</a></li>
+                                {shopLinks.map(element => {
+                                    const {id, title, url} = element;
+                                    return (
+                                        <li key={id}><a href={url}>{title}</a></li>
+                                    )
+                                })}
                             </ul>
                         </div>
                         <div>
                             <h5>DC</h5>
                             <ul className="list-group">
-                                <li><a href="#">Terms Of Use</a></li>
-                                <li><a href="#">Privacy Policy (New)</a></li>
-                                <li><a href="#">AD Choices</a></li>
-                                <li><a href="#">Advertising</a></li>
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Subscriptions</a></li>
-                                <li><a href="#">Talent Workshop</a></li>
-                                <li><a href="#">CPSC Certifications</a></li>
-                                <li><a href="#">Ratings</a></li>
-                                <li><a href="#">Shop Help</a></li>
-                                <li><a href="#">Contavt Us</a></li>
+                                {dcLinks.map(element => {
+                                    const {id, title, url} = element;
+                                    return (
+                                        <li key={id}><a href={url}>{title}</a></li>
+                                    )
+                                })}
                             </ul>
                         </div>
                         <div>
                             <h5>SITES</h5>
                             <ul className="list-group">
-                                <li><a href="#">DC</a></li>
-                                <li><a href="#">MAD Magazine</a></li>
-                                <li><a href="#">DC Kids</a></li>
-                                <li><a href="#">DC Universe</a></li>
-                                <li><a href="#">DC Power Visa</a></li>
+                                {sitesLinks.map(element => {
+                                    const {id, title, url} = element;
+                                    return (
+                                        <li key={id}><a href={url}>{title}</a></li>
+                                    )
+                                })}
                             </ul>
                         </div>
                     </div>
