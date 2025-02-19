@@ -14,7 +14,7 @@ const Main = () => {
             </div>
             <div className="bg-custom m-0">
                 <div className="container">
-                    <ul className="d-flex justify-content-between wrap m-0">
+                    <ul className="d-flex justify-content-between p-0 m-0">
                         <li>
                             <a href="#">
                                 <img src={digitalComicsImg} alt="Digital comics" />
