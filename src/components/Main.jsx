@@ -1,3 +1,4 @@
+import ComicsList from "./ComicsList";
 import digitalComicsImg from "../assets/img/buy-comics-digital-comics.png";
 import merchImg from "../assets/img/buy-comics-merchandise.png";
 import subImg from "../assets/img/buy-comics-subscriptions.png";
@@ -7,9 +8,15 @@ import powerVisaImg from "../assets/img/buy-dc-power-visa.svg";
 const Main = () => {
     return (
         <main>
-            <div className="bg-black">
+            <div className="jumbotron"></div>
+            <div className="bg-black text-white">
                 <div className="container">
-                    <h3 className="text-white py-5 m-0">Content goes here</h3>
+                    <div className="current">
+                        CURRENT SERIES
+                    </div>
+                    <div>
+                        <ComicsList />
+                    </div>
                 </div>
             </div>
             <div className="bg-custom m-0">

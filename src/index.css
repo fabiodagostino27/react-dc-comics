@@ -40,6 +40,26 @@ header img {
 }
 
 /*Main*/
+.jumbotron {
+    background-image: url("assets/img/jumbotron.jpg");
+    height: 50vh;
+    background-size: cover;
+}
+
+.bg-black > .container {
+    position: relative;
+    height: 500px;
+}
+
+.current {
+    position: absolute;
+    padding: 10px 15px;
+    background-color: #0282F9;
+    font-weight: 700;
+    font-size: 18px;
+    top: -20px;
+}
+
 .bg-custom {
     background-color: #0282F9;
     color: white;
