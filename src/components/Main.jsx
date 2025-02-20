@@ -11,11 +11,14 @@ const Main = () => {
             <div className="jumbotron"></div>
             <div className="bg-black text-white">
                 <div className="container">
-                    <div className="current">
+                    <div className="current blue-banner">
                         CURRENT SERIES
                     </div>
-                    <div className="row py-5 gy-5">
+                    <div className="row py-2 gy-5">
                         <ComicsList />
+                    </div>
+                    <div className="text-center py-5">
+                        <a href="#" className="blue-banner fs-6 px-5">LOAD MORE</a>
                     </div>
                 </div>
             </div>

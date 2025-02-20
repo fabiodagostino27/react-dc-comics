@@ -50,12 +50,15 @@ header img {
     position: relative;
 }
 
-.current {
-    position: absolute;
+.blue-banner {
     padding: 10px 15px;
     background-color: #0282F9;
     font-weight: 700;
     font-size: 18px;
+}
+
+.current {
+    position: absolute;
     top: -20px;
 }
 
