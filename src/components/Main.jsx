@@ -14,7 +14,7 @@ const Main = () => {
                     <div className="current">
                         CURRENT SERIES
                     </div>
-                    <div>
+                    <div className="row py-5 gy-5">
                         <ComicsList />
                     </div>
                 </div>
