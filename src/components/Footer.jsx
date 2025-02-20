@@ -5,10 +5,10 @@ import footPin from "../assets/img/footer-pinterest.png";
 import footPer from "../assets/img/footer-periscope.png";
 
 const Footer = (props) => {
-    const dcComicsLinks = props.dcComicsLinks;
-    const shopLinks = props.shopLinks;
-    const dcLinks = props.dcLinks;
-    const sitesLinks = props.sitesLinks;
+    const dcComicsLinks = props.footerLinks.dcComics;
+    const shopLinks = props.footerLinks.shop;
+    const dcLinks = props.footerLinks.dc;
+    const sitesLinks = props.footerLinks.sites;
 
     return (
         <footer>

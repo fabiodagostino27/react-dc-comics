@@ -86,7 +86,7 @@ footer {
     padding-bottom: 20px;
 }
 
-.footer-top li:hover {
+.footer-top a:hover {
     color: white;
 }
 
